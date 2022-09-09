@@ -24,6 +24,7 @@ $plugin_dir = WP_PLUGIN_DIR . '/noaman';
 
 define('NOAMAN_CACHE_KEY_PREFIX','noaman_cache_key_');
 
-// Include your custom code here.
-
+// Load dependencies
+require_once $plugin_dir . '/includes/api.php';
 require_once $plugin_dir . '/shortcodes/images_search.php';
+require_once $plugin_dir . '/includes/assets.php';
