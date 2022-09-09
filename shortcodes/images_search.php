@@ -1,10 +1,12 @@
 <?php
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) exit;
+if (! defined('ABSPATH') ) { exit;
+}
 
-add_shortcode( 'images_search', 'noaman_images_search_shortcode_function' );
-function noaman_images_search_shortcode_function( $atts ) {
+add_shortcode('images_search', 'noaman_images_search_shortcode_function');
+function noaman_images_search_shortcode_function( $atts )
+{
     $images = get_images_from_api($atts);
     $content = '';
     
@@ -16,4 +18,4 @@ function noaman_images_search_shortcode_function( $atts ) {
     }
     
     return $content;
-}
+} 

@@ -2,9 +2,9 @@
 /**
  * noaman
  *
- * @package       NOAMAN
- * @author        Noaman Ahmed
- * @version       1.0.0
+ * @package NOAMAN
+ * @author  Noaman Ahmed
+ * @version 1.0.0
  *
  * @wordpress-plugin
  * Plugin Name:   noaman
@@ -18,11 +18,12 @@
  */
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) exit;
+if (! defined('ABSPATH') ) { exit;
+}
 
 $plugin_dir = WP_PLUGIN_DIR . '/noaman';
 
-define('NOAMAN_CACHE_KEY_PREFIX','noaman_cache_key_');
+define('NOAMAN_CACHE_KEY_PREFIX', 'noaman_cache_key_');
 
 // Load dependencies
 require_once $plugin_dir . '/includes/api.php';
